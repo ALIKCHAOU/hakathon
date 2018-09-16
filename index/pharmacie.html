@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+  
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+  <title>Liste de pharmacie Tunisie Medical Annuaire</title>
+    <meta name="description" content="Annuaire spécialisé dans le domaine du médical, il permet de trouver un professionnel de santé, médecin, pharmacie, dentiste... en Tunisie">
+    <meta name="keywords" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<link rel="icon" type="image/png" href="../favicon.ico" />
+<!-- Bootstrap Styles -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<!-- Awesome Icons -->
+<link rel="stylesheet" href="../css/font-awesome.css">
+<!-- Carousel -->
+<link href="../css/owl-carousel.css" rel="stylesheet">
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="../rs-plugin/css/settings.css" media="screen" />
+<!-- Styles -->
+<link href="../css/style.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900' rel='stylesheet' type='text/css'>
+<!-- Support for HTML5 -->
+<!--[if lt IE 9]>
+  <script src="http://tunisie-medicale.com/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Enable media queries on older bgeneral_rowsers -->
+<!--[if lt IE 9]>
+  <script src="http://tunisie-medicale.com/js/respond.min.js"></script>  <![endif]-->
+<script>
+    var base_url = "index.html";
+</script>
+</head>
+<body>
+
+    <div class="animationload">
+        <div class="loader">Loading...</div>
+    </div>
+        
+    <header class="header">
+        <div class="container">
+            <nav class="navbar yamm navbar-default">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand"><img src="../images/logo.png" alt="medical annuaire"></a>
+                </div><!-- end navbar-header -->
+
+                <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Accueil </a></li>
+                        <li><a href="docteur.html">Docteurs</a></li>
+                        <li><a href="pharmacie.html">Pharmacies</a></li>
+                        <li><a href="index.html">Hôpitaux & Cliniques</a></li>
+                        <li><a href="dentiste.html">Dentistes</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                        <li class="last_item"><a href="user/login.html">
+                                                                    <i class="fa fa-lock"></i> Login
+                                                            </a>    
+                        </li>
+                    </ul><!-- end navbar-nav -->
+                </div><!-- #navbar-collapse-1 -->
+            </nav><!-- end navbar yamm navbar-default -->
+        </div><!-- end container -->
+    </header><!-- end header -->
+  
+
+<div class="white-wrapper">
+    <div class="container">
+        <div class="rech_pharmacie">
+            <div class="big-title">
+                <h3><i class="fa fa-search"></i> Trouver une pharmacie</h3>
+            </div>
+
+            <div class="box">
+    <form id="search" class="online_form_builder_big" action="" method="get">
+
+        <div class="col-md-3">
+            <label for="speciality">Type</label>
+            <select class="form-control" id="type" name="type">
+                <option value=""> -- Tous -- </option>
+                <option value="Pharmacie de jours" > Pharmacie de jours </option>
+                <option value="Pharmacie de nuit" > Pharmacie de nuit </option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <label for="region">Régions</label>
+            <select class="form-control" id="region" name="city_id">
+
+                <option value=""> -- Tous -- </option>
+                
+                <option value="1" >Ariana</option>
+
+                
+                <option value="2" >Béja</option>
+
+                
+                <option value="3" >Ben Arous</option>
+
+                
+                <option value="4" >Bizerte</option>
+
+                
+                <option value="5" >Gabès</option>
+
+                
+                <option value="6" >Gafsa</option>
+
+                
+                <option value="7" >Jendouba</option>
+
+                
+                <option value="8" >Kairouan</option>
+
+                
+                <option value="9" >Kasserine</option>
+
+                
+                <option value="10" >Kébili</option>
+
+                
+                <option value="11" >Kef</option>
+
+                
+                <option value="12" >Mahdia</option>
+
+                
+                <option value="13" >Manouba</option>
+
+                
+                <option value="14" >Médenine</option>
+
+                
+                <option value="15" >Monastir</option>
+
+                
+                <option value="16" >Nabeul</option>
+
+                
+                <option value="17" >Sfax</option>
+
+                
+                <option value="18" >Sidi Bouzid</option>
+
+                
+                <option value="19" >Siliana</option>
+
+                
+                <option value="20" >Sousse</option>
+
+                
+                <option value="21" >Tataouine</option>
+
+                
+                <option value="22" >Tozeur</option>
+
+                
+                <option value="23" >Tunis</option>
+
+                
+                <option value="24" >Zaghouan</option>
+
+                                        
+
+            </select>
+        </div>                        
+
+        <div class="col-md-3">
+            <label for="words">Autre critères</label>
+            <input type="text" class="form-control" id="words" name="words" value="" placeholder="Nom / Prénom / Téléphone / Adresse">
+        </div>
+
+        <div class="col-md-3">
+            <label for="rechercher">&nbsp;</label>
+            <button type="submit" class="btn btn-dark btn-block"> <i class="fa fa-search"></i> Trouver</button>
+        </div>
+
+        <div class="clearfix"></div>
+    </form>
+</div><!-- end box -->
+        </div><!-- end search -->
+
+        <div class="general_row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="kechrid mohamed mounir"> 
+                                    <h3><a href="pharmacie/1602-kechrid-mohamed-mounir-tunis.html" data-toggle="tooltip" data-placement="top" title="Kechrid Mohamed Mounir">
+                                            <span>Kechrid M&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=36.8064948,10.181531599999971" target="_blank">27 rue al jazira</a><br>
+                                        Tunis<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel:+21671327609">+21671327609</a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="elloumi nabila"> 
+                                    <h3><a href="pharmacie/1601-elloumi-nabila-ben-arous.html" data-toggle="tooltip" data-placement="top" title="Elloumi Nabila">
+                                            <span>Elloumi N&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=36.7754903,10.23197570000002" target="_blank">7 bis rue wad mellag&#8230;</a><br>
+                                        Ben Arous<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel:24500361">24500361</a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="lazhar mohamed"> 
+                                    <h3><a href="pharmacie/1600-lazhar-mohamed-tataouine.html" data-toggle="tooltip" data-placement="top" title="Lazhar Mohamed ">
+                                            <span>Lazhar Mo&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-moon-o"></i>
+                                                                                Phar&hellip; de nuit                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20rue%20ali%20belhaouane-%20bir%20lahmar-%20tataouine,%20Tunisie,%20Tataouine" target="_blank">rue ali belhaouane-&#8230;</a><br>
+                                        Tataouine<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 23 54 40 08  "> 23 54 40 08  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="ben khadra fatma ep abbes"> 
+                                    <h3><a href="pharmacie/1599-ben-khadra-fatma-ep-abbes-gabes.html" data-toggle="tooltip" data-placement="top" title="Ben Khadra Fatma Ep Abbes ">
+                                            <span>Ben Khadr&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20AVENUE%2027%20OCTOBRE%20FACE%20GARDE%20FRONTIERE,%20Tunisie,%20Gab%c3%a8s" target="_blank">AVENUE 27 OCTOBRE FACE&#8230;</a><br>
+                                        Gabès<br>  
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="kchaou mouna"> 
+                                    <h3><a href="pharmacie/1598-kchaou-mouna-sfax.html" data-toggle="tooltip" data-placement="top" title="Kchaou Mouna ">
+                                            <span>Kchaou Mo&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20AVENUE%20HABIB%20BOURGUIBA%20AGAREB%20SFAX,%20Tunisie,%20Sfax" target="_blank">AVENUE HABIB BOURGUIBA&#8230;</a><br>
+                                        Sfax<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 74 27 12 77  "> 74 27 12 77  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="el labiadh samia"> 
+                                    <h3><a href="pharmacie/1597-el-labiadh-samia-monastir.html" data-toggle="tooltip" data-placement="top" title="El Labiadh Samia ">
+                                            <span>El Labiad&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20AVENUE%20DE%20L'ENVIRONNEMENT%20-%20GHENADA,%20Tunisie,%20Monastir" target="_blank">AVENUE DE L'ENVIRONNEMENT&#8230;</a><br>
+                                        Monastir<br>  
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="fennira taoufik"> 
+                                    <h3><a href="pharmacie/1596-fennira-taoufik-tunis.html" data-toggle="tooltip" data-placement="top" title="Fennira Taoufik ">
+                                            <span>Fennira T&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20121%20Avenue%20Jugurta%20Mutuelle-ville,%20Tunisie,%20Tunis" target="_blank">121 Avenue Jugurta Mutuelle-ville&#8230;</a><br>
+                                        Tunis<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 71 89 16 04  "> 71 89 16 04  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="othmen mohamed"> 
+                                    <h3><a href="pharmacie/1595-othmen-mohamed-nabeul.html" data-toggle="tooltip" data-placement="top" title="Othmen Mohamed ">
+                                            <span>Othmen Mo&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20EL%20MIDA,%20Tunisie,%20Nabeul" target="_blank"> EL MIDA</a><br>
+                                        Nabeul<br>  
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="dhouibi boutheina"> 
+                                    <h3><a href="pharmacie/1594-dhouibi-boutheina-tozeur.html" data-toggle="tooltip" data-placement="top" title="Dhouibi Boutheina ">
+                                            <span>Dhouibi B&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20AVENUE%20HABIB%20BOURGUIBA,%20Tunisie,%20Tozeur" target="_blank">AVENUE HABIB BOURGUIBA&#8230;</a><br>
+                                        Tozeur<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 76 45 74 65  "> 76 45 74 65  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="mejdoub leila ep fendri"> 
+                                    <h3><a href="pharmacie/1593-mejdoub-leila-ep-fendri-sfax.html" data-toggle="tooltip" data-placement="top" title="Mejdoub Leila Ep Fendri ">
+                                            <span>Mejdoub L&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20ROUTE%20MENZEL%20CHAKER%20KM%205%20SFAX,%20Tunisie,%20Sfax" target="_blank">ROUTE MENZEL CHAKER&#8230;</a><br>
+                                        Sfax<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 74 26 53 49  "> 74 26 53 49  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="ben slima mounira ep ghorbel"> 
+                                    <h3><a href="pharmacie/1592-ben-slima-mounira-ep-ghorbel-sfax.html" data-toggle="tooltip" data-placement="top" title="Ben Slima Mounira Ep Ghorbel ">
+                                            <span>Ben Slima&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20ROUTE%20DE%20GREMDA%20KM%205.5,%20Tunisie,%20Sfax" target="_blank">ROUTE DE GREMDA KM 5.5&#8230;</a><br>
+                                        Sfax<br>  
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="frikha najmeddine"> 
+                                    <h3><a href="pharmacie/1591-frikha-najmeddine-sfax.html" data-toggle="tooltip" data-placement="top" title="Frikha Najmeddine ">
+                                            <span>Frikha Na&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20AVENUE%20DES%20MARTYRS%20BAB%20JEBLI%20SFAX,%20Tunisie,%20Sfax" target="_blank">AVENUE DES MARTYRS BAB&#8230;</a><br>
+                                        Sfax<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 74 22 98 00  "> 74 22 98 00  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="abcha leila"> 
+                                    <h3><a href="pharmacie/1590-abcha-leila-medenine.html" data-toggle="tooltip" data-placement="top" title="Abcha Leila ">
+                                            <span>Abcha Lei&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20RUE%202%20MAI%20A%20COTE%20DE%20LA%20DIRECTION%20REGIONALE%20DE%20LA%20C,%20Tunisie,%20M%c3%a9denine" target="_blank">RUE 2 MAI A COTE DE&#8230;</a><br>
+                                        Médenine<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 75 70 04 04  "> 75 70 04 04  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="mrad mariem"> 
+                                    <h3><a href="pharmacie/1589-mrad-mariem-gafsa.html" data-toggle="tooltip" data-placement="top" title="M'rad Mariem ">
+                                            <span>M'rad Mar&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20HAY%20ENNOUR,%20Tunisie,%20Gafsa" target="_blank"> HAY ENNOUR</a><br>
+                                        Gafsa<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 76 22 27 39  "> 76 22 27 39  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="rhouma anouar"> 
+                                    <h3><a href="pharmacie/1588-rhouma-anouar-gabes.html" data-toggle="tooltip" data-placement="top" title="Rhouma Anouar ">
+                                            <span>Rhouma An&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20AVENUE%20HABIB%20BOURGUIBA%20CHENINI,%20Tunisie,%20Gab%c3%a8s" target="_blank">AVENUE HABIB BOURGUIBA&#8230;</a><br>
+                                        Gabès<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 75 27 43 11  "> 75 27 43 11  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="ourir fethi"> 
+                                    <h3><a href="pharmacie/1587-ourir-fethi-siliana.html" data-toggle="tooltip" data-placement="top" title="Ourir Fethi ">
+                                            <span>Ourir Fet&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20AVENUE%20HABIB%20BOURGUIBA,%20Tunisie,%20Siliana" target="_blank">AVENUE HABIB BOURGUIBA&#8230;</a><br>
+                                        Siliana<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 78 89 20 22  "> 78 89 20 22  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="ktata chafik"> 
+                                    <h3><a href="pharmacie/1586-ktata-chafik-bizerte.html" data-toggle="tooltip" data-placement="top" title="Ktata Chafik ">
+                                            <span>Ktata Cha&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20AVENUE%20HABIB%20BOURGUIBA%20AOUSJA%20GHAR%20EL%20MELH,%20Tunisie,%20Bizerte" target="_blank">AVENUE HABIB BOURGUIBA&#8230;</a><br>
+                                        Bizerte<br>  
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="ben rezig hmidi"> 
+                                    <h3><a href="pharmacie/1585-ben-rezig-hmidi-siliana.html" data-toggle="tooltip" data-placement="top" title="Ben Rezig H'midi ">
+                                            <span>Ben Rezig&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20ROUHIA,%20Tunisie,%20Siliana" target="_blank"> ROUHIA</a><br>
+                                        Siliana<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 78 89 30 61  "> 78 89 30 61  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="laatil tamboura insaf"> 
+                                    <h3><a href="pharmacie/1584-laatil-tamboura-insaf-tunis.html" data-toggle="tooltip" data-placement="top" title="Laatil Tamboura Insaf ">
+                                            <span>Laatil Ta&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20Angle%20des%20Rues%2042710%20et%2040850,%20Tunisie,%20Tunis" target="_blank">Angle des Rues 42710&#8230;</a><br>
+                                        Tunis<br>  
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="team_widget">
+                            <ul>
+                                <li>
+                                    <img src="../client/pharmacie/default.jpg" class="img-responsive img-circle alignleft" alt="akrmi mondher"> 
+                                    <h3><a href="pharmacie/1583-akrmi-mondher-beja.html" data-toggle="tooltip" data-placement="top" title="Akrmi Mondher ">
+                                            <span>Akrmi Mon&hellip;</span>
+                                        </a></h3>
+                                    <h4>
+                                                                                    <i class="fa fa-sun-o"></i> 
+                                                                                Phar&hellip;de jours                                    </h4>                                        
+                                    <p class="doctor-details">
+                                                                                <span><i class="fa fa-map-marker"></i> Adresse : </span><a href="http://maps.google.com/?q=Adresse:%20AVENUE%20HABIB%20BOURGUIBA%20MEJEZ%20EL%20BAB,%20Tunisie,%20B%c3%a9ja" target="_blank">AVENUE HABIB BOURGUIBA&#8230;</a><br>
+                                        Béja<br>  
+                                            
+                                            <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> <a href="tel: 78 46 09 64  "> 78 46 09 64  </a><br>   
+                                                                            </p>
+
+                                </li>
+
+                            </ul>
+                        </div><!-- end team_widget -->   
+                    </div><!-- end col -->
+                 
+        </div><!-- end col -->
+
+
+        <div class="clearfix"></div>
+
+        <div class="text-center">
+            <ul class="pagination"><li class="active"><a>1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">&raquo</a></li></ul>
+        </div>
+
+    </div><!-- end row -->
+</div><!-- end container -->
+</div><!-- end white-wrapper -->
+
+<div class="grey-wrapper green_color">
+<div class="container">
+    <div class="general_row">
+        <div class="big-title clearfix">
+            <h3>Dérniers docteurs sur l'annuaire</h3>
+        </div><!-- end big title -->
+        
+        <div class="carousel_widget">
+            <div class="team_widget">
+                <ul id="owl-blog" class="owl-carousel">
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="BOUHAMED TAOUFIK"> 
+                                <h3><a href="docteur/877-bouhamed-taoufik-medecine-generale-tunis.html" data-toggle="tooltip" data-placement="top" title="Bouhamed Taoufik">
+                                    <span>Bouhamed &hellip;</span>
+                                </a></h3>
+                                <h4>MEDECINE GENE&hellip;</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span> 23, AV. F. HACHED<br>
+                                    Tunis<br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 71731617<br>   
+                                                                    </p>
+                            </li>
+
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="LAKHDAR LEILA"> 
+                                <h3><a href="docteur/40-lakhdar-leila-medecine-generale-ariana.html" data-toggle="tooltip" data-placement="top" title="Lakhdar Leila">
+                                    <span>Lakhdar L&hellip;</span>
+                                </a></h3>
+                                <h4>MEDECINE GENE&hellip;</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span>  PLACE 7 NOVEMBRE<br>
+                                    Ariana<br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 71221662<br>   
+                                                                    </p>
+                            </li>
+
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="SHAIEK HOUDA"> 
+                                <h3><a href="docteur/818-shaiek-houda-medecine-generale-bizerte.html" data-toggle="tooltip" data-placement="top" title="Shaiek Houda">
+                                    <span>Shaiek Ho&hellip;</span>
+                                </a></h3>
+                                <h4>MEDECINE GENE&hellip;</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span>  AV. HABIB BOURGUIBA<br>
+                                    Bizerte<br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 72446531<br>   
+                                                                    </p>
+                            </li>
+
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="JARRAR MOHAMED HABIB"> 
+                                <h3><a href="docteur/2716-jarrar-mohamed-habib-pediatrie-ben-arous.html" data-toggle="tooltip" data-placement="top" title="Jarrar Mohamed Habib">
+                                    <span>Jarrar Mo&hellip;</span>
+                                </a></h3>
+                                <h4>PEDIATRIE</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span> 33, RUE S.BOUCHOUCHA<br>
+                                    Ben Arous<br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 71292512<br>   
+                                                                    </p>
+                            </li>
+
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="BOUGUERRA MOHAMED KHALED"> 
+                                <h3><a href="docteur/288-bouguerra-mohamed-khaled-medecine-generale-tunis.html" data-toggle="tooltip" data-placement="top" title="Bouguerra Mohamed Khaled">
+                                    <span>Bouguerra&hellip;</span>
+                                </a></h3>
+                                <h4>MEDECINE GENE&hellip;</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span> 3, RUE D'ITALIE CITE&#8230;<br>
+                                    Tunis<br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 71775506<br>   
+                                                                    </p>
+                            </li>
+
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="BATTIKH HAYET"> 
+                                <h3><a href="docteur/1883-battikh-hayet-ophtalmologie.html" data-toggle="tooltip" data-placement="top" title="Battikh Hayet">
+                                    <span>Battikh H&hellip;</span>
+                                </a></h3>
+                                <h4>OPHTALMOLOGIE</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span> RUE, 13 AOUT IMM. SLIM<br>
+                                    <br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 71231789<br>   
+                                                                    </p>
+                            </li>
+
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="BEN AHMED MONCEF"> 
+                                <h3><a href="docteur/607-ben-ahmed-moncef-medecine-generale-bizerte.html" data-toggle="tooltip" data-placement="top" title="Ben Ahmed Moncef">
+                                    <span>Ben Ahmed&hellip;</span>
+                                </a></h3>
+                                <h4>MEDECINE GENE&hellip;</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span> AV. HABIB BOURGUIBA<br>
+                                    Bizerte<br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 72454320<br>   
+                                                                    </p>
+                            </li>
+
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="BOUHDIBA MOHAMED ALI"> 
+                                <h3><a href="docteur/1999-bouhdiba-mohamed-ali-gynecologie-obstetrique-ariana.html" data-toggle="tooltip" data-placement="top" title="Bouhdiba Mohamed Ali">
+                                    <span>Bouhdiba &hellip;</span>
+                                </a></h3>
+                                <h4>GYNECOLOGIE-O&hellip;</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span> 3, AV. DE LA LIBERTE&#8230;<br>
+                                    Ariana<br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 71750327<br>   
+                                                                    </p>
+                            </li>
+
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="MGHAIETH ZEINEB"> 
+                                <h3><a href="docteur/1294-mghaieth-zeineb-medecine-generale-tunis.html" data-toggle="tooltip" data-placement="top" title="Mghaieth Zeineb">
+                                    <span>Mghaieth &hellip;</span>
+                                </a></h3>
+                                <h4>MEDECINE GENE&hellip;</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span> RUE DES AGHLABITES<br>
+                                    Tunis<br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 71520194<br>   
+                                                                    </p>
+                            </li>
+
+                                                       
+                        
+                            <li>
+                                <img src="../client/medecin/default.png" class="img-responsive img-circle alignleft" alt="KEFI LOTFI"> 
+                                <h3><a href="docteur/2217-kefi-lotfi-gynecologie-obstetrique-ben-arous.html" data-toggle="tooltip" data-placement="top" title="Kefi Lotfi">
+                                    <span>Kefi Lotf&hellip;</span>
+                                </a></h3>
+                                <h4>GYNECOLOGIE-O&hellip;</h4>   
+                                <p class="doctor-details">
+                                    <span><i class="fa fa-map-marker"></i> Adresse : </span> 41 AV. DE LA MEDITERRANNEE<br>
+                                    Ben Arous<br>  
+                                        
+                                        <span><i class="fa fa-mobile-phone"></i> Téléphone : </span> 71510343<br>   
+                                                                    </p>
+                            </li>
+
+                                               
+                                     
+                </ul>
+            </div><!-- end team_widget -->  
+        </div><!-- end carousel_widget -->     
+    </div><!-- end general_row -->
+</div><!-- end container --></div><!-- end white-wrapper -->
+
+
+
+    
+    
+	<div class="dmtop">Scroll to Top</div>
+    
+	<!-- Main Scripts-->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap-datetimepicker.js"></script>
+	<script src="../js/menu.js"></script>
+	<script src="../js/retina-1.1.0.js"></script>
+	<script src="../js/custom.js"></script>
+	<script src="../js/scripts.js"></script>
+
+	<!-- CALENDAR WIDGET -->
+	<script type="text/javascript">
+		(function($) {
+		  "use strict";
+			$('.form_datetime').datetimepicker({
+				weekStart: 1,
+				todayBtn:  1,
+				autoclose: 1,
+				todayHighlight: 1,
+				startView: 2,
+				forceParse: 0,
+				showMeridian: 1
+			});
+		})(jQuery);
+	</script>
+
+	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+	<script type="text/javascript" src="../rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="../rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript">
+		(function($) {
+		  "use strict";
+			var revapi;
+			jQuery(document).ready(function() {
+				revapi = jQuery('.tp-banner').revolution(
+				{
+					delay:9000,
+					startwidth:1170,
+					startheight:560,
+					hideThumbs:10,
+					fullWidth:"on",
+					forceFullWidth:"on"
+				});
+			});	//ready
+		})(jQuery);
+	</script>
+    
+	<!-- CAROUSEL WIDGET -->
+	<script src="../js/owl.carousel.min.js"></script>
+	<script>
+		(function($) {
+		  "use strict";
+			// OWL Carousel
+			$("#owl-blog").owlCarousel({
+				items : 3,
+				lazyLoad : true,
+				navigation : true,
+				pagination : false,
+				autoPlay: true
+			});
+			
+		})(jQuery);
+	</script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81051235-1', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+
+<!-- Mirrored from tunisie-medicale.com/index.php/pharmacie by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Sep 2018 00:23:16 GMT -->
+</html>

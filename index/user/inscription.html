@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Mirrored from tunisie-medicale.com/index.php/user/inscription by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Sep 2018 00:25:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+  <title> Tunisie Medical Annuaire</title>
+    <meta name="description" content="Annuaire spécialisé dans le domaine du médical, il permet de trouver un professionnel de santé, médecin, pharmacie, dentiste... en Tunisie">
+    <meta name="keywords" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<link rel="icon" type="image/png" href="../../favicon.ico" />
+<!-- Bootstrap Styles -->
+<link href="../../css/bootstrap.css" rel="stylesheet">
+<!-- Awesome Icons -->
+<link rel="stylesheet" href="../../css/font-awesome.css">
+<!-- Carousel -->
+<link href="../../css/owl-carousel.css" rel="stylesheet">
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="../../rs-plugin/css/settings.css" media="screen" />
+<!-- Styles -->
+<link href="../../css/style.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900' rel='stylesheet' type='text/css'>
+<!-- Support for HTML5 -->
+<!--[if lt IE 9]>
+  <script src="http://tunisie-medicale.com/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Enable media queries on older bgeneral_rowsers -->
+<!--[if lt IE 9]>
+  <script src="http://tunisie-medicale.com/js/respond.min.js"></script>  <![endif]-->
+<script>
+    var base_url = "../index.html";
+</script>
+</head>
+<body>
+
+    <div class="animationload">
+        <div class="loader">Loading...</div>
+    </div>
+        
+    <header class="header">
+        <div class="container">
+            <nav class="navbar yamm navbar-default">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="../index.html" class="navbar-brand"><img src="../../images/logo.png" alt="medical annuaire"></a>
+                </div><!-- end navbar-header -->
+
+                <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Accueil </a></li>
+                        <li><a href="../docteur.html">Docteurs</a></li>
+                        <li><a href="../pharmacie.html">Pharmacies</a></li>
+                        <li><a href="../index.html">Hôpitaux & Cliniques</a></li>
+                        <li><a href="../dentiste.html">Dentistes</a></li>
+                        <li class="active"><a href="../contact.html">Contact</a></li>
+                        <li class="last_item"><a href="login.html">
+                                                                    <i class="fa fa-lock"></i> Login
+                                                            </a>    
+                        </li>
+                    </ul><!-- end navbar-nav -->
+                </div><!-- #navbar-collapse-1 -->
+            </nav><!-- end navbar yamm navbar-default -->
+        </div><!-- end container -->
+    </header><!-- end header -->
+    <div class="shadow"></div><div class="post-wrapper-top clearfix">
+    <div class="container">
+        <div class="col-lg-12">
+            <h2>Inscription</h2>
+            <ul class="breadcrumb pull-right">
+                <li><a href="../index.html">Accueil</a></li>
+                <li>Inscription</li>
+            </ul>
+        </div>
+    </div>
+</div><!-- end post-wrapper-top -->
+
+<div class="white-wrapper">
+    <div class="container">
+        <div class="alert alert-info">
+            <i class="fa fa-info-circle"></i> <a href="../contact.html" class="alert-link">Si vous trouvez vos données sur notre site. vous pouvez nous contacter et avoir les identifiants de connexion.  </a>
+        </div>
+        <form role="form" action="http://tunisie-medicale.com/index.php/user/ajouter" method="post" id="inscriptionForm" class="row online_form_builder_big">
+            
+            <div id="content" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <div id="message">
+                                    </div>
+
+                <div class="big-title">
+                    <h3><i class="fa fa-info-circle"></i> Informations</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email">Je suis un(e) <i class="fa fa-asterisk red-star"></i></label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-stethoscope"></i></span>
+                            <select name="user_type" class="form-control" id="select_type">
+                                                                  <option value="1" >Docteur</option>
+                                                                  <option value="2" >Pharmacien</option>
+                                                                  <option value="3" >Dentiste</option>
+                                                            </select>
+                                                    </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="list_specialites">
+                    <label for="specialite">Spécialité</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-graduation-cap"></i></span>
+                            <select class="form-control" id="speciality" name="speciality_id"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-md-6">
+                    <label for="name">Nom & Prénom <i class="fa fa-asterisk red-star"></i></label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" name="fullname" value="" class="form-control" placeholder="Votre Nom & Prénom">
+                        </div>
+                                            </div>                    
+                </div>
+                <div class="col-md-6">
+                    <label for="phone">Téléphone <i class="fa fa-asterisk red-star"></i></label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                            <input type="text" name="phone" value="" class="form-control" placeholder="Votre Numéro de Téléphone">
+                        </div>
+                                            </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="col-md-6">
+                    <label for="email">E-mail <i class="fa fa-asterisk red-star"></i></label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input type="email" name="email" value="" class="form-control" placeholder="Votre E-mail">
+                        </div>
+                                            </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="password">Mot de passe <i class="fa fa-asterisk red-star"></i></label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="password" name="password" value="" class="form-control" placeholder="Votre mot de passe">
+                        </div>
+                                            </div>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="big-title">
+                    <h3><i class="fa fa-map-marker"></i> Coordonnées</h3>
+                </div>
+
+                <div class="col-md-12">
+                    <label for="email">Adresse <i class="fa fa-asterisk red-star"></i></label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input type="text" name="address" value="" class="form-control" placeholder="Adresse">
+                        </div>
+                                            </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="col-md-6">
+                    <label for="password">Gouvernorat</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                            <select class="form-control" id="select_gouvernorat" name="city_id">
+                                                                        <option value="1">Ariana</option>
+                                                                            <option value="2">Béja</option>
+                                                                            <option value="3">Ben Arous</option>
+                                                                            <option value="4">Bizerte</option>
+                                                                            <option value="5">Gabès</option>
+                                                                            <option value="6">Gafsa</option>
+                                                                            <option value="7">Jendouba</option>
+                                                                            <option value="8">Kairouan</option>
+                                                                            <option value="9">Kasserine</option>
+                                                                            <option value="10">Kébili</option>
+                                                                            <option value="11">Kef</option>
+                                                                            <option value="12">Mahdia</option>
+                                                                            <option value="13">Manouba</option>
+                                                                            <option value="14">Médenine</option>
+                                                                            <option value="15">Monastir</option>
+                                                                            <option value="16">Nabeul</option>
+                                                                            <option value="17">Sfax</option>
+                                                                            <option value="18">Sidi Bouzid</option>
+                                                                            <option value="19">Siliana</option>
+                                                                            <option value="20">Sousse</option>
+                                                                            <option value="21">Tataouine</option>
+                                                                            <option value="22">Tozeur</option>
+                                                                            <option value="23">Tunis</option>
+                                                                            <option value="24">Zaghouan</option>
+                                                                </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="delegation">Délégation</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                            <select class="form-control" id="list_delegation" name="community_id">
+                                                                        <option value="1">Ariana Ville</option>
+                                                                            <option value="2">Ettadhamen</option>
+                                                                            <option value="3">Kalâat el-Andalous</option>
+                                                                            <option value="4">La Soukra</option>
+                                                                            <option value="5">Mnihla</option>
+                                                                            <option value="6">Raoued</option>
+                                                                            <option value="7">Sidi Thabet</option>
+                                                                </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>                
+
+                <div class="col-md-12">
+                    <label class="red-star"> <i class="fa fa-map-marker"></i> <small>Vous pouvez déplacer le marqueur pour préciser votre emplacement</small></label>
+                    <div id="map"></div>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="col-md-6 hidden">
+                    <label for="email">Latitude</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                            <input type="hidden" name="lat" value="36.8665367" id="latitude" class="form-control" placeholder="Latitude">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hidden">
+                    <label for="password">Longitude</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                            <input type="hidden" name="lng" value="10.164723299999991" id="longitude" class="form-control" placeholder="Longitude">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+                  
+            </div><!-- end content -->
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="hidden-xs"><div class="big-title clearfix">
+    <h3>Espace publicité</h3>
+</div><!-- end big title -->
+<div id="" class="">
+    <div class="blog-carousel">
+        <div class="entry">
+            <a href="https://www.facebook.com/HarmonyDecorations/" target="_blank"><img src="../../demos/pub.jpg" alt="Harmony Decoration" class="img-responsive"></a>
+            <div class="magnifier">
+                <div class="buttons">
+                    <a class="st" rel="bookmark" href="https://www.facebook.com/HarmonyDecorations/" target="_blank"><i class="fa fa-eye"></i></a>
+                </div><!-- end buttons -->
+            </div><!-- end magnifier -->
+        </div><!-- end entry -->
+        <a href="https://www.facebook.com/HarmonyDecorations/" target="_blank" class="btn btn-dark btn-lg center-block"><i class="fa fa-facebook-square"></i>&nbsp; Visiter la page</a>
+    </div><!-- end blog-carousel -->                        
+</div><!-- end row --></div>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="big-title">
+                    <h3><i class="fa fa-share-alt"></i> Réseaux sociaux</h3>
+                </div>
+
+                <div class="col-md-12">
+                    <label for="name">Facebook</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-facebook"></i></span>
+                            <input type="url" name="rs_facebook" class="form-control" placeholder="Votre compte Facebook">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="col-md-12">
+                    <label for="phone">Google Plus</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-google-plus"></i></span>
+                            <input type="url" name="rs_google" class="form-control" placeholder="Votre compte Googgle plus">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="col-md-12">
+                    <label for="email">Twitter</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-twitter"></i></span>
+                            <input type="url" name="rs_twitter" class="form-control" placeholder="Votre compte Twitter">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="col-md-12">
+                    <label for="password">LinkedIn</label>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-linkedin"></i></span>
+                            <input type="url" name="rs_linkedin" class="form-control" placeholder="Votre compte Linkedin">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <br>
+
+            </div><!-- end sidebar -->
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-check"></i> Enregistrer</button>    
+            </div> 
+        </form>
+    </div><!-- end container -->
+</div><!-- end white-wrapper -->
+<script>
+    var marker;
+    var markers = new Array();
+    var i = 0;
+    var withDelg;
+    function initMap() {
+        var myLatlng = {lat: 36.8665367, lng: 10.164723299999991};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 6,
+            center: myLatlng
+        });
+        var geocoder = new google.maps.Geocoder();
+        marker = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: myLatlng
+        });
+
+        document.getElementById('select_gouvernorat').addEventListener('change', function () {
+            geocodeAddress(geocoder, map, 0);
+            marker.setMap(null);//hide marker
+            map.setZoom(11);
+        });
+        document.getElementById('list_delegation').addEventListener('change', function () {
+            geocodeAddress(geocoder, map, 1);
+            marker.setMap(null);//hide marker
+            map.setZoom(11);
+        });
+        marker.addListener('click', toggleBounce);
+        marker.addListener('dragend', function (event) {
+            document.getElementById("latitude").value = marker.getPosition().lat();
+            document.getElementById("longitude").value = marker.getPosition().lng();
+        });
+    }
+    //dropdown change position 
+    function geocodeAddress(geocoder, resultsMap, withDelg) {
+        //var address = document.getElementById('select_gouvernorat').value;
+        var selected_gov = document.getElementById("select_gouvernorat").selectedIndex;
+        var options_gov = document.getElementById("select_gouvernorat").options;
+        if(withDelg == 1) {
+            var selected_del = document.getElementById("list_delegation").selectedIndex;
+            var options_del = document.getElementById("list_delegation").options;
+            var address = 'Tunisie, '+options_gov[selected_gov].text +', '+options_del[selected_del].text;
+        } else {
+            var address = 'Tunisie, '+options_gov[selected_gov].text;
+        }
+        //console.log(address);
+        geocoder.geocode({'address': address}, function (results, status) {
+            if (status === google.maps.GeocoderStatus.OK) {
+                resultsMap.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                    map: resultsMap,
+                    position: results[0].geometry.location,
+                    draggable: true,
+                    animation: google.maps.Animation.DROP
+                });
+                /* Permet de supprimer le marker précédemment affiché */
+                markers.push(marker);
+                if(markers.length > 1) 
+                    markers[(i-1)].setMap(null);
+                i++;
+     
+                // input value
+                document.getElementById("latitude").value = marker.getPosition().lat();
+                document.getElementById("longitude").value = marker.getPosition().lng();
+
+                marker.addListener('dragend', function (event) {
+                    document.getElementById("latitude").value = marker.getPosition().lat();
+                    document.getElementById("longitude").value = marker.getPosition().lng();
+                });
+                marker.addListener('click', toggleBounce);
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+    }
+    //marker animation
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0FtXfSjXyEhfc0K2s5Fw5trtBqFtIa9w&amp;signed_in=true&amp;callback=initMap"></script>
+    <div class="copyright">
+    	<div class="container">
+        	<div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="copyright-text">
+                        <p>Copyright &copy 2018 - Medical annuaire</p>
+                    </div><!-- end copyright-text -->
+                </div><!-- end widget -->
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <div class="footer-menu">
+                        <ul class="menu pull-right">
+                            <li><a href="../index.html">Accueil</a></li>
+                            <li><a href="../docteur.html">Docteurs</a></li>
+                            <li><a href="../pharmacie.html">Pharmacies</a></li>
+                            <li><a href="../index.html">Hôpitaux et cliniques</a></li>
+                            <li><a href="../dentiste.html">Dentistes</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div><!-- end large-7 --> 
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+    
+	<div class="dmtop">Scroll to Top</div>
+    
+	<!-- Main Scripts-->
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/bootstrap-datetimepicker.js"></script>
+	<script src="../../js/menu.js"></script>
+	<script src="../../js/retina-1.1.0.js"></script>
+	<script src="../../js/custom.js"></script>
+	<script src="../../js/scripts.js"></script>
+
+	<!-- CALENDAR WIDGET -->
+	<script type="text/javascript">
+		(function($) {
+		  "use strict";
+			$('.form_datetime').datetimepicker({
+				weekStart: 1,
+				todayBtn:  1,
+				autoclose: 1,
+				todayHighlight: 1,
+				startView: 2,
+				forceParse: 0,
+				showMeridian: 1
+			});
+		})(jQuery);
+	</script>
+
+	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+	<script type="text/javascript" src="../../rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="../../rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript">
+		(function($) {
+		  "use strict";
+			var revapi;
+			jQuery(document).ready(function() {
+				revapi = jQuery('.tp-banner').revolution(
+				{
+					delay:9000,
+					startwidth:1170,
+					startheight:560,
+					hideThumbs:10,
+					fullWidth:"on",
+					forceFullWidth:"on"
+				});
+			});	//ready
+		})(jQuery);
+	</script>
+    
+	<!-- CAROUSEL WIDGET -->
+	<script src="../../js/owl.carousel.min.js"></script>
+	<script>
+		(function($) {
+		  "use strict";
+			// OWL Carousel
+			$("#owl-blog").owlCarousel({
+				items : 3,
+				lazyLoad : true,
+				navigation : true,
+				pagination : false,
+				autoPlay: true
+			});
+			
+		})(jQuery);
+	</script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81051235-1', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
+
+<!-- Mirrored from tunisie-medicale.com/index.php/user/inscription by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Sep 2018 00:25:50 GMT -->
+</html>
